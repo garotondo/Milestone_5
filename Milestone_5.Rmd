@@ -1,0 +1,14 @@
+---
+title: "Milestone_5"
+author: "Grace Rotondo"
+date: "10/17/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The job search is a stressful process. One thing that can help during the process is networking with alumni. I am a member of the Varsity Lacrosse Team and though our alumni network is strong, it is lacking an alumni directory with accurate data. To address this problem, I decided tp create an alumni directory using data from the Harvard Women's Lacrosse Letterwinners page on go.crimson.com as well as an excel spreadsheet with alumnae contact information. I've taken the letterwinners' data and created another spreadsheet, and included several new variables that are not in the alumnae contact list. Such variables include, Concentration, Secondary Concentration, Graduate School, Industry, and Linkedin. I decided that these variables were necessary to include for when someone would like to contact an alum with similar academic interests or graduate school prospects. 
+
+I will merge the data alomng the following variables:
