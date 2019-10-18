@@ -7,8 +7,12 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(readxl)
+library(tidyverse)
+
 ```
 
-The job search is a stressful process. One thing that can help during the process is networking with alumni. I am a member of the Varsity Lacrosse Team and though our alumni network is strong, it is lacking an alumni directory with accurate data. To address this problem, I decided tp create an alumni directory using data from the Harvard Women's Lacrosse Letterwinners page on go.crimson.com as well as an excel spreadsheet with alumnae contact information. I've taken the letterwinners' data and created another spreadsheet, and included several new variables that are not in the alumnae contact list. Such variables include, Concentration, Secondary Concentration, Graduate School, Industry, and Linkedin. I decided that these variables were necessary to include for when someone would like to contact an alum with similar academic interests or graduate school prospects. 
+The job search is a stressful process. One thing that can help during the process is networking with alumni. I am a member of the Varsity Lacrosse Team and though our alumni network is strong, it is lacking an alumni directory with accurate data. To address this problem, I decided tp create an alumni directory using data from the Harvard Women's Lacrosse Letterwinners page on go.crimson.com, the Harvard alumni database, and excel spreadsheet with alumnae contact information. I've taken the letterwinners' data and house affiliations from the alumni directory and created another spreadsheet which includes several new variables that are not in the alumnae contact list. Such variables include: House, Concentration, Secondary Concentration, Graduate School, Industry, and Linkedin. I decided that these variables were necessary to include for when someone would like to contact an alum who was in their house or had similar academic, graduate school, and industry interests.
 
-I will merge the data alomng the following variables:
+I will merge the letterwinners spreadsheet with the contact information spreadsheet so that I can create a directory with names, addresses, email addresses, phone numbers, graduation years, house affiliations, concentrations, graduate school affiliations, companies, roles, industries, and linkedin profiles. These variables will be the means by which people can use the alumni directory and search for alumns with particular affiliations.
